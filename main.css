@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+  background: hsl(204, 43%, 93%);
+  margin-block: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  display: grid;
+  box-shadow: 10px 10px 20px hsl(218, 22%, 67%);
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-bottom-right-radius: 9px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.promo-header {
+  background: hsl(0, 0%, 100%);
+  grid-column: 1/span2;
+  padding: 1rem 2rem;
+  padding-inline-start: 3rem;
+  border-radius: 9px 9px 0 0;
+}
+.promo-header__title {
+  color: hsl(179, 62%, 43%);
+  margin-block: 1rem 1.3rem;
+  font-size: 1.6rem;
+}
+.promo-header__subtitle {
+  color: hsl(71, 73%, 54%);
+  margin-block-end: 1rem;
+}
+.promo-header__info {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.7;
+  margin-block-end: 1rem;
+}
+
+.subscription {
+  padding: 1rem 2rem;
+  padding-inline-start: 3rem;
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 9px;
+  padding-block-start: 2rem;
+  color: white;
+}
+.subscription__title {
+  margin-block-end: 1rem;
+  font-size: 1.2rem;
+}
+.subscription__pricing {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-block-end: 0.5rem;
+}
+.subscription__price {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.subscription__text {
+  opacity: 0.7;
+  color: hsl(204, 43%, 93%);
+}
+.subscription__btn {
+  display: inline-block;
+  margin-block-start: 1.5rem;
+  border: none;
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.8rem 0;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 9px;
+}
+
+.features {
+  background: hsla(179, 62%, 43%, 0.8);
+  border-bottom-right-radius: 9px;
+  padding-block: 2rem;
+  padding-inline-start: 2.1rem;
+  color: hsl(204, 43%, 93%);
+}
+.features__title {
+  margin-block-end: 1rem;
+  font-size: 1.3rem;
+}
+.features__item {
+  padding-block: 0.2rem;
+}
+
+@media all and (max-width: 670px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .promo-header {
+    grid-column: 1;
+  }
+  .subscription {
+    border-bottom-left-radius: 0;
+  }
+  .features {
+    border-radius: 0 0 9px 9px;
+  }
+}/*# sourceMappingURL=main.css.map */
